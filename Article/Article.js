@@ -99,102 +99,156 @@ const data = [
     <span class='expandButton'></span>
   </div>
 
+
+
+///////////////////////////////////////////////////////////////// 
   Hint: You will need to use createElement more than once here!
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each peice of the data object above. */
 // parent container
 let articles = document.querySelector('.articles');
-// the kids
-let article = document.createElement('article')
-// the grandchildren
-let title = document.createElement('h2');
-let date = document.createElement('p');
+// creating the child elements
+// let article = document.createElement('article')
+// // the grandchildren
+// let title = document.createElement('h2');
+// let date = document.createElement('p');
+// let firstParagraph = document.createElement('p');
+// let secondParagraph = document.createElement('p');
+// let thirdParagraph = document.createElement('p');
+// // make a button 
+// let expandButton = document.createElement('span');
+////////////////////////////////////
+// // creating a function to handle multiple elements also with a text parameter for text in the article
+function articleCreator(text) {
+  let article = document.createElement('article');
+  let title = document.createElement('h2');
+  let date = document.createElement('p');
+  let firstParagraph = document.createElement('p');
+  let secondParagraph = document.createElement('p');
+  let thirdParagraph = document.createElement('p');
+  // make a button 
+  let expandButton = document.createElement('span');
 
-let firstParagraph = document.createElement('p');
-let secondParagraph = document.createElement('p');
-let thirdParagraph = document.createElement('p');
-// make a button 
-let expandButton = document.createElement('span');
+  // text content for created elements
+  article.textContent = text;
+  date.textContent = text;
+  firstParagraph.textContent = text;
+  secondParagraph.textContent = text;
+  thirdParagraph.textContent = text;
+
+  article.classList.add('article');
+  title.classList.add('title');
+  date.classList.add('date');
+  expandButton.classList.add('expandButton');
+
+  expandButton.addEventListener('click', (e) => {
+    console.log('clicked!');
+  });
+
+  return article;
+}
+
+let firstArticle = articleCreator('Article 1');
+let secondArticle = articleCreator('Article 2');
+let thirdArticle = articleCreator('Article 3');
+let fourthArticle = articleCreator('Article 4');
+
+articles.appendChild(firstArticle);
+articles.appendChild(secondArticle);
+articles.appendChild(thirdArticle);
+articles.appendChild(fourthArticle);
 
 // text content for created elements
-articles.textContent = "this is the parent/body container for the site.";
+// article.textContent = "text";
+// date.textContent = "text";
+// firstParagraph.textContent = "text";
+// secondParagraph.textContent = "text";
+// thirdParagraph.textContent = "text";
 
-// articles.classList.add('.articles')
-article.classList.add('article');
-title.classList.add('title');
-p.classList.add('date');
+// articles.classList.add('articles');
+// article.classList.add('article');
+// title.classList.add('title');
+// date.classList.add('date');
+// expandButton.classList.add('expandButton');
 
-console.log(articles);
+// console.log(articles);
 // console.log(article);
 // console.log(title);
 // console.log(date);
 // console.log(expandButton);
 
+let body = document.querySelector('body');
+
 // body.appendChild(article);
-articles.appendChild(article);
-article.appendChild(title);
-article.appendChild(date);
-article.appendChild(firstParagraph);
-article.appendChild(secondParagraph);
-article.appendChild(thirdParagraph);
-article.appendChild(expandButton);
+// articles.appendChild(article);
+// article.appendChild(title);
+// article.appendChild(date);
+// article.appendChild(firstParagraph);
+// article.appendChild(secondParagraph);
+// article.appendChild(thirdParagraph);
+// article.appendChild(expandButton);
 
 
 
 
 
- /* Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
+/* Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
 
-  Step 3: return the entire component.
+ Step 3: return the entire component.
 
-  Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
+ Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
 
-  Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new artible
+ Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new artible
 
 */
+///////////////////////////////////////////////////////////notes//////////////////////////////////////////////////////////////////////////
 // // component 1 video notes
 // // component example - small part of a larger whole.
 // // applying arrays of data 
-// const fakeData = [
-// "Button one",
-// "Button two",
-// "Button three",
-// "Button four"
+// const Data = [
+// "Article 1",
+// "Article 2",
+// "Article 3",
+// "Article 4"
 // ]
 
-// // creating a function to handle multiple elements also with a text parameter for text on the button
-// function buttonCreator(text) {
+// function articleCreator(text) {
 //   // created element that is floating in browswer memory. it created a button element hence createElement
-//   let button = document.createElement('button');
+//   let article = document.createElement('article');
+
 //   // adding text content to the button element
-//   button.textContent = text;
+//   article.textContent = text;
+
 //   // adding classes aka css classes!
-//   button.classList.add('button');
-//   button.classList.add('large-button');
+//   article.classList.add('article');
+//   title.classList.add('title');
+//   date.classList.add('date');
+//   expandButton.classList.add('expandButton');
+
 //   //  click eventListener 
-//   button.addEventListener('click', (event) => {
+//   expandButton.addEventListener('click', (event) => {
 //     console.log('the button clicked says: ${event.target.textContent}')
 //   })
-//   return button
+//   return article
 // }
+
 // // grabbing what the function above returns the long way
-// const button1 = buttonCreator(fakeData[0]);
-// // creating a second button to pass through the function with its text in the parenthesis 
+// const Article 1 = articleCreator(Data[0]);
+// // creating a second article to pass through the function with its text in the parenthesis 
 // // you also can add your element index to these
-// const button2 = buttonCreator(fakeData[1]);
-// const button3 = buttonCreator(fakeData[2]);
-// const button4 = buttonCreator(fakeData[3]);
+// const Article 2 = articleCreator(Data[1]);
+// const Article 3 = articleCreator(Data[2]);
+// const Article 4 = articleCreator(Data[3]);
 
 // // invoking function 
-// console.log('the product of the buttonCreator function', button)
+// console.log('the product of the articleCreator function', article)
 // // parent element / page container
-// let container = document.querySelector('.container');
+// let articles = document.querySelector('.articles');
 // // adding button(s) to page. wet.
-// container.appendChild(button1)
-// container.appendChild(button2)
-// container.appendChild(button3)
-// container.appendChild(button4)
-
+// articles.appendChild(Article 1)
+// articles.appendChild(Article 2)
+// articles.appendChild(Article 3)
+// articles.appendChild(Article 4)
 // // grabbing what the function above returns the above in a drier way in a for loop. rarely you use for loops see below forEach. 
 // // cuts out the code from const button1 = buttonCreator(fakeData[0]); also from container.appendChild(button1)
 // // for(let i = 0; i < fakeData.length; i++){
