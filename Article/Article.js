@@ -1,51 +1,51 @@
 /* This is the data we will be using to create our article components */
 /* Look over this data, then proceed to line 91*/
 const data = [
-    {
-        title: 'Lambda School Students: "We\'re the best!"',
-        date: 'Nov 5th, 2018',
-        firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
+  {
+    title: 'Lambda School Students: "We\'re the best!"',
+    date: 'Nov 5th, 2018',
+    firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
         Hutt calamari darth jabba.Darth dooku amidala organa moff.Boba darth binks solo hutt skywalker dantooine skywalker.Qui - gonn
         jar twi'lek jinn leia jango skywalker mon.`,
 
-        secondParagraph: `Grievous fett calamari anakin skywalker hutt.Alderaan darth kenobi darth r2- d2
+    secondParagraph: `Grievous fett calamari anakin skywalker hutt.Alderaan darth kenobi darth r2- d2
         windu mothma.Sidious darth calamari moff.Wampa mothma sith wedge solo mara.Darth gonk maul sith moff chewbacca palpatine
         mace amidala.C - 3po solo skywalker anakin yoda leia.Maul wampa bespin watto jade ewok darth jabba.Lando dantooine moff
         k - 3po dantooine luke.Fisto mandalore darth wedge c - 3p0 ahsoka.Secura moff palpatine fett.Anakin sith darth darth.Moff
         solo leia ben ponda jade.Binks jango aayla skywalker skywalker cade.Mustafar darth ventress anakin watto.Yavin jawa sebulba
         owen jinn tatooine sith organa.`,
 
-        thirdParagraph: `Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
+    thirdParagraph: `Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
         naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff baba wicket
         han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé wookiee. Leia
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
-    },
-    {
-        title: 'Javascript and You, ES6',
-        date: 'May 7th, 2019',
-        firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
+  },
+  {
+    title: 'Javascript and You, ES6',
+    date: 'May 7th, 2019',
+    firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
         yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon
         knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed.
         Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks`,
 
-        secondParagraph: `Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder
+    secondParagraph: `Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder
         wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir
         mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma
         and Parvati Sorting Hat Minister of Magic blue turban remember my last.`,
 
-        thirdParagraph: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights 
+    thirdParagraph: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights 
         Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven 
         roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot 
         sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
-    },
-    {
-        title: 'React vs Angular vs Vue',
-        date: 'June 7th, 2019',
-        firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
+  },
+  {
+    title: 'React vs Angular vs Vue',
+    date: 'June 7th, 2019',
+    firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
         consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor
@@ -55,7 +55,7 @@ const data = [
         Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur adipiscing
         elit.`,
 
-        secondParagraph: `Pidgey Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pidgeotto Lorem ipsum dolor sit amet, consectetur adipiscing
+    secondParagraph: `Pidgey Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pidgeotto Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Pidgeot Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rattata Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Raticate Lorem ipsum dolor sit amet, consectetur adipiscing elit. Spearow Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Fearow Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ekans Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -66,26 +66,26 @@ const data = [
         consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidorino Lorem ipsum dolor
         sit amet, consectetur adipiscing elit. Nidoking Lorem ipsum`,
 
-        thirdParagraph: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel 
+    thirdParagraph: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel 
         Leech Life Seismitoad Ariados. Earthquake Pokemon Glitch City Tail Whip Skitty Ekans Dialga. Ut aliquip ex ea commodo consequat James 
         Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
-    },
-    {
-        title: 'Professional Software Development in 2019',
-        date: 'Jan 1st, 2019',
-        firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
+  },
+  {
+    title: 'Professional Software Development in 2019',
+    date: 'Jan 1st, 2019',
+    firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
 
-        secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
           hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
           hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
           hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
 
-        thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
+    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-    }
+  }
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
@@ -102,13 +102,14 @@ const data = [
   Hint: You will need to use createElement more than once here!
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each peice of the data object above. */
-
-  // creating elements\
 // parent container
-let article = document.createElement('div');
+let articles = document.querySelector('.articles');
 // the kids
+let article = document.createElement('article')
+// the grandchildren
 let title = document.createElement('h2');
 let date = document.createElement('p');
+
 let firstParagraph = document.createElement('p');
 let secondParagraph = document.createElement('p');
 let thirdParagraph = document.createElement('p');
@@ -116,30 +117,27 @@ let thirdParagraph = document.createElement('p');
 let expandButton = document.createElement('span');
 
 // text content for created elements
-article.textContent = "article content. creating the parent element aqui";
+articles.textContent = "this is the parent/body container for the site.";
 
-expandButton.textContent = "awkward turtle";
+// articles.classList.add('.articles')
+article.classList.add('article');
+title.classList.add('title');
+p.classList.add('date');
 
-// classes of multiple elements - 3 paragraphs 
-article.classList.add('h2');
-article.classList.add('.date')
-article.classList.add('firstParagraph');
-article.classList.add('secondParagraph');
-article.classList.add('thirdParagraph');
-article.classList.add('span')
-// button.classList.add('button-large');
+console.log(articles);
+// console.log(article);
+// console.log(title);
+// console.log(date);
+// console.log(expandButton);
 
-console.log(article);
-console.log(title);
-console.log(date);
-console.log(expandButton);
-
-let body = document.querySelector('body');
-
-body.appendChild(article);
-body.appendChild(title);
-body.appendChild(date);
-body.appendChild(expandButton);
+// body.appendChild(article);
+articles.appendChild(article);
+article.appendChild(title);
+article.appendChild(date);
+article.appendChild(firstParagraph);
+article.appendChild(secondParagraph);
+article.appendChild(thirdParagraph);
+article.appendChild(expandButton);
 
 
 
@@ -154,3 +152,67 @@ body.appendChild(expandButton);
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new artible
 
 */
+// // component 1 video notes
+// // component example - small part of a larger whole.
+// // applying arrays of data 
+// const fakeData = [
+// "Button one",
+// "Button two",
+// "Button three",
+// "Button four"
+// ]
+
+// // creating a function to handle multiple elements also with a text parameter for text on the button
+// function buttonCreator(text) {
+//   // created element that is floating in browswer memory. it created a button element hence createElement
+//   let button = document.createElement('button');
+//   // adding text content to the button element
+//   button.textContent = text;
+//   // adding classes aka css classes!
+//   button.classList.add('button');
+//   button.classList.add('large-button');
+//   //  click eventListener 
+//   button.addEventListener('click', (event) => {
+//     console.log('the button clicked says: ${event.target.textContent}')
+//   })
+//   return button
+// }
+// // grabbing what the function above returns the long way
+// const button1 = buttonCreator(fakeData[0]);
+// // creating a second button to pass through the function with its text in the parenthesis 
+// // you also can add your element index to these
+// const button2 = buttonCreator(fakeData[1]);
+// const button3 = buttonCreator(fakeData[2]);
+// const button4 = buttonCreator(fakeData[3]);
+
+// // invoking function 
+// console.log('the product of the buttonCreator function', button)
+// // parent element / page container
+// let container = document.querySelector('.container');
+// // adding button(s) to page. wet.
+// container.appendChild(button1)
+// container.appendChild(button2)
+// container.appendChild(button3)
+// container.appendChild(button4)
+
+// // grabbing what the function above returns the above in a drier way in a for loop. rarely you use for loops see below forEach. 
+// // cuts out the code from const button1 = buttonCreator(fakeData[0]); also from container.appendChild(button1)
+// // for(let i = 0; i < fakeData.length; i++){
+// //   let button = buttonCreator(fakeData[i]);
+// //   container.appendChild(button)
+// // }
+// // forEach array method is a great way for us to implement data on the DOM quickly
+// // fakeData.forEach( (item) => {
+// //   let button = buttonCreator(item);
+// //   container.appendChild(button);
+// // })
+// // can also map over the data returns a new array with the new item after being manipulated bu the callback function.
+// let buttonsArray = fakeData.map( (item) => {
+//   let button = buttonCreator(item);
+//   return button;
+// })
+// // applying forEach to new array to display buttons
+// buttonsArray.forEach(button => {
+//   container.appendChild(button)
+// })
+// console.log(buttonsArray)
