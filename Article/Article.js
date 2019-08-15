@@ -85,124 +85,110 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Professional Lambda Student Development in 2019',
+    date: 'Sept 8th, 1988',
+    firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
+          hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
+          Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
+
+    secondParagraph: `Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
+          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
+          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? `,
+
+    thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
+          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
   }
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
-  
   <div class="article">
     <h2>{title of the article}</h2>
     <p class="date">{date of the article}</p>
-
     {three separate paragraph elements}
-
     <span class='expandButton'></span>
   </div>
-
-
-
-///////////////////////////////////////////////////////////////// 
-  Hint: You will need to use createElement more than once here!
-
-  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each peice of the data object above. */
-// parent container
-let articles = document.querySelector('.articles');
-// creating the child elements
-// let article = document.createElement('article')
-// // the grandchildren
-// let title = document.createElement('h2');
-// let date = document.createElement('p');
-// let firstParagraph = document.createElement('p');
-// let secondParagraph = document.createElement('p');
-// let thirdParagraph = document.createElement('p');
-// // make a button 
-// let expandButton = document.createElement('span');
-////////////////////////////////////
-// // creating a function to handle multiple elements also with a text parameter for text in the article
-function articleCreator(text) {
-  let article = document.createElement('article');
-  let title = document.createElement('h2');
-  let date = document.createElement('p');
-  let firstParagraph = document.createElement('p');
-  let secondParagraph = document.createElement('p');
-  let thirdParagraph = document.createElement('p');
-  // make a button 
-  let expandButton = document.createElement('span');
-
-  // text content for created elements
-  article.textContent = text;
-  date.textContent = text;
-  firstParagraph.textContent = text;
-  secondParagraph.textContent = text;
-  thirdParagraph.textContent = text;
-
-  article.classList.add('article');
-  title.classList.add('title');
-  date.classList.add('date');
-  expandButton.classList.add('expandButton');
-
-  expandButton.addEventListener('click', (e) => {
-    console.log('clicked!');
-  });
-
-  return article;
-}
-
-let firstArticle = articleCreator('Article 1');
-let secondArticle = articleCreator('Article 2');
-let thirdArticle = articleCreator('Article 3');
-let fourthArticle = articleCreator('Article 4');
-
-articles.appendChild(firstArticle);
-articles.appendChild(secondArticle);
-articles.appendChild(thirdArticle);
-articles.appendChild(fourthArticle);
-
-// text content for created elements
-// article.textContent = "text";
-// date.textContent = "text";
-// firstParagraph.textContent = "text";
-// secondParagraph.textContent = "text";
-// thirdParagraph.textContent = "text";
-
-// articles.classList.add('articles');
-// article.classList.add('article');
-// title.classList.add('title');
-// date.classList.add('date');
-// expandButton.classList.add('expandButton');
-
-// console.log(articles);
-// console.log(article);
-// console.log(title);
-// console.log(date);
-// console.log(expandButton);
-
-let body = document.querySelector('body');
-
-// body.appendChild(article);
-// articles.appendChild(article);
-// article.appendChild(title);
-// article.appendChild(date);
-// article.appendChild(firstParagraph);
-// article.appendChild(secondParagraph);
-// article.appendChild(thirdParagraph);
-// article.appendChild(expandButton);
-
-
-
-
-
 /* Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
 
  Step 3: return the entire component.
 
  Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
 
- Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new artible
+ Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article
 
 */
+///////////////////////////////////////////////////////////////// 
+  // Hint: You will need to use createElement more than once here!
+
+  // Your function should take either an object as it's one argument, or 5 separate arguments mapping to each peice of the data object above. */
+// parent container
+// creating the child elements
+
+
+
+//////////////////////////////////// ---
+// // creating a function to handle multiple elements also with a text parameter for text in the article
+function articleCreator(text) {
+  let article = document.createElement('div');
+
+  let title = document.createElement('h2');
+  title.textContent = text.title;
+  article.appendChild(title)
+
+  let date = document.createElement('p');
+  date.textContent = text.date;
+  article.appendChild(date)
+
+  let firstParagraph = document.createElement('p');
+  firstParagraph.textContent = text.firstParagraph;
+  article.appendChild(firstParagraph)
+
+  let secondParagraph = document.createElement('p');
+  secondParagraph.textContent = text.secondParagraph;
+  article.appendChild(secondParagraph)
+
+  let thirdParagraph = document.createElement('p');
+  thirdParagraph.textContent = text.thirdParagraph;
+  article.appendChild(thirdParagraph)
+
+  let fourthParagraph = document.createElement('p');
+  fourthParagraph.textContent = text.fourthParagraph;
+  article.appendChild(fourthParagraph)
+
+  let expandButton = document.createElement('span');
+  expandButton.textContent = "Read More";
+  article.appendChild(expandButton)
+  
+  // adding css classes to elements.
+  article.classList.add('article');
+  date.classList.add('date');
+  expandButton.classList.add('expandButton');
+
+  expandButton.addEventListener('click', (event) => {
+    article.classList.toggle('article-open')
+  });
+
+  return article;
+}
+
+let articles = document.querySelector('.articles')
+
+// // can also map over the data returns a new array with the new item after being manipulated bu the callback function.
+let articleArray = data.map( (item) => {
+  let articleOfNew = articleCreator(item);
+  return articleOfNew;
+})
+console.log(articleArray);
+
+articleArray.forEach(function(item) {
+articles.appendChild(item);
+})
 ///////////////////////////////////////////////////////////notes//////////////////////////////////////////////////////////////////////////
-// // component 1 video notes
+
+// // component 1 video notes ----------------------------------------
 // // component example - small part of a larger whole.
 // // applying arrays of data 
 // const Data = [
@@ -250,23 +236,23 @@ let body = document.querySelector('body');
 // articles.appendChild(Article 3)
 // articles.appendChild(Article 4)
 // // grabbing what the function above returns the above in a drier way in a for loop. rarely you use for loops see below forEach. 
-// // cuts out the code from const button1 = buttonCreator(fakeData[0]); also from container.appendChild(button1)
-// // for(let i = 0; i < fakeData.length; i++){
-// //   let button = buttonCreator(fakeData[i]);
-// //   container.appendChild(button)
+// // cuts out the code from const button1 = buttonCreator(Data[0]); also from articles.appendChild(Artilce 1)
+// // for(let i = 0; i < Data.length; i++){
+// //   let article = articleCreator(Data[i]);
+// //   articles.appendChild(article)
 // // }
 // // forEach array method is a great way for us to implement data on the DOM quickly
-// // fakeData.forEach( (item) => {
+// // Data.forEach( (item) => {
 // //   let button = buttonCreator(item);
-// //   container.appendChild(button);
+// //   articles.appendChild(article);
 // // })
 // // can also map over the data returns a new array with the new item after being manipulated bu the callback function.
-// let buttonsArray = fakeData.map( (item) => {
-//   let button = buttonCreator(item);
-//   return button;
+// let articleArray = Data.map( (item) => {
+//   let article = articleCreator(item);
+//   return article;
 // })
-// // applying forEach to new array to display buttons
-// buttonsArray.forEach(button => {
-//   container.appendChild(button)
+// // applying forEach to new array to display articles
+// articleArray.forEach(article => {
+//   articles.appendChild(article)
 // })
 // console.log(buttonsArray)
